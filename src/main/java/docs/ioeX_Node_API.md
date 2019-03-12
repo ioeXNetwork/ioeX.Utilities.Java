@@ -1,6 +1,6 @@
 # Web Request
 
- - start command : java -cp Elastos.ELA.Utilities.Java.jar  org.elastos.elaweb.HttpServer
+ - start command : java -cp ioeX.Utilities.Java.jar  org.ioexnetwork.ioexweb.HttpServer
  - suggestion：java version "1.8.0_161"
  - local IP : http://127.0.0.1:8989/
 
@@ -38,7 +38,7 @@ description: estimate transaction fee smartly
 result:
 | name | type | description |
 | ---- | ---- | ----------- |
-|  -   | int  | fee rate, the unit is sela per KB |
+|  -   | int  | fee rate, the unit is IOEX per KB |
 
 ##### Request
 ```
@@ -181,7 +181,7 @@ description: list all utxo of given addresses
                 "type": 0,
                 "payloadversion": 4,
                 "payload": {
-                    "CoinbaseData": "ELA"
+                    "CoinbaseData": "IOEX"
                 },
                 "attributes": [
                     {
@@ -266,7 +266,7 @@ description: list all utxo of given addresses
         "type": 0,
         "payloadversion": 4,
         "payload": {
-            "CoinbaseData": "ELA"
+            "CoinbaseData": "IOEX"
         },
         "attributes": [
             {
@@ -476,7 +476,7 @@ description: get the balance of an address
                 "payloadversion": 0,
                 "payload": {
                     "Asset": {
-                        "Name": "ELA",
+                        "Name": "IOEX",
                         "Description": "",
                         "Precision": 8,
                         "AssetType": 0,

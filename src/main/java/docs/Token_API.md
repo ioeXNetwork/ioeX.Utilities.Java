@@ -1,6 +1,6 @@
 # Web Request
 
- - start command : java -cp Elastos.ELA.Utilities.Java.jar  org.elastos.elaweb.HttpServer
+ - start command : java -cp ioeX.Utilities.Java.jar  org.ioexnetwork.ioexweb.HttpServer
  - suggestion：java version "1.8.0_161"
  - local IP : http://127.0.0.1:8989/
 
@@ -15,7 +15,7 @@ description: register asset transaciton
 | vout| int | the serial number of the tx in which the balance is available 
 | privatekey | string | Utxo address corresponds to the private key| 
 | address | string | arrival address | 
-| amount | string | the unit is ELA,Namely:32.2ELA | 
+| amount | string | the unit is IOEX,Namely:32.2IOEX | 
 | name | string | asset name , only letters and numbers are allowed in English| 
 | description | string | asset description | 
 | precision | int | asset precision ,0-18 | 
@@ -80,10 +80,10 @@ description: register asset transaciton
 | Host| string | Server IP and RPC ports where the node program resides | 
 | Fee| string | The single output or multiple input and output fees of a transaction are the same | 
 | Confirmation| string | Number of block confirmation transactions | 
-| RegisterAssetFee| string | Minimum transaction fee for registered assets 10 ela |
+| RegisterAssetFee| string | Minimum transaction fee for registered assets 10 IOEX |
 | privatekey | string | Utxo address corresponds to the private key| 
 | address | string | arrival address | 
-| amount | string | the unit is ELA,Namely:32.2ELA | 
+| amount | string | the unit is IOEX,Namely:32.2IOEX | 
 | name | string | asset name , only letters and numbers are allowed in English| 
 | description | string | asset description | 
 | precision | int | asset precision ,0-18 | 
@@ -146,7 +146,7 @@ description: register asset transaciton
 description:asset transaction
 
 #### Tips
-- Inputs must have an ELA utxo, which is used to construct transaction fee
+- Inputs must have an IOEX utxo, which is used to construct transaction fee
 - Transfer of assets does not consume part of the assets as a fee. Note that the total amount of transferred assets (outputs) must be consistent with the utxo amount (inputs)
 
 #### Parameter Description
@@ -158,7 +158,7 @@ description:asset transaction
 | privatekey | string | Utxo address corresponds to the private key|
 | assetid | string | asset unique identification | 
 | address | string | arrival address | 
-| amount | string | the unit is ELA,Namely:200.01ELA | 
+| amount | string | the unit is IOEX,Namely:200.01IOEX | 
 
 ##### Request
 ```
@@ -269,7 +269,7 @@ description:asset transaction
 description:multi sign asset transaction
 
 #### Tips
-- Inputs must have an ELA utxo, which is used to construct transaction fee
+- Inputs must have an IOEX utxo, which is used to construct transaction fee
 - Transfer of assets does not consume part of the assets as a fee. Note that the total amount of transferred assets (outputs) must be consistent with the utxo amount (inputs)
 
 #### Parameter Description

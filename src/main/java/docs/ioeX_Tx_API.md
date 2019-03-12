@@ -1,6 +1,6 @@
 # Web Request
 
- - start command : java -cp Elastos.ELA.Utilities.Java.jar  org.elastos.elaweb.HttpServer
+ - start command : java -cp ioeX.Utilities.Java.jar  org.ioexnetwork.ioexweb.HttpServer
  - suggestion：java version "1.8.0_161"
  - local IP : http://127.0.0.1:8989/
 
@@ -19,7 +19,7 @@ description:constructing single sign transaction
 | vout| int | the serial number of the tx in which the balance is available 
 | privatekey | string | Utxo address corresponds to the private key| 
 | address | string | arrival address | 
-| amount | string | the unit is ELA,Namely:200.01ELA | 
+| amount | string | the unit is IOEX,Namely:200.01IOEX | 
 
 
 ##### Request
@@ -80,7 +80,7 @@ description:constructing single sign transaction
 | Confirmation| string | Number of block confirmation transactions | 
 | privatekey | string | Utxo address corresponds to the private key，Automatic acquisition of utxo| 
 | address | string | arrival address | 
-| amount | string | the unit is ELA,Namely:289.1ELA | 
+| amount | string | the unit is IOEX,Namely:289.1IOEX | 
 | changeaddress | string | Change address | 
 
 #### 接口名：genrawtxbyprivatekey
@@ -147,7 +147,7 @@ description:multi sign transaction
 | txid | string | transaction where the available balance of address is located |
 | vout| int | the serial number of the tx in which the balance is available  
 | address | string | multi sign address| 
-| amount | string | the unit is ELA,Namely:200.01ELA | 
+| amount | string | the unit is IOEX,Namely:200.01IOEX | 
 | privatekeyscripte |  |private key for generating multi-signature addresses | 
 | m | int | sign number | 
 

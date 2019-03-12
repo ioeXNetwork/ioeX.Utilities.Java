@@ -1,7 +1,7 @@
 
 # Web Request
 
- - start command : java -cp Elastos.ELA.Utilities.Java.jar  org.elastos.elaweb.HttpServer
+ - start command : java -cp ioeX.Utilities.Java.jar  org.ioexnetwork.ioexweb.HttpServer
  - suggestion：java version "1.8.0_161"
  - local IP : http://127.0.0.1:8989/
 
@@ -146,7 +146,7 @@ description:obtain the genesis address based on the genesis block hash
 ```
 
 ## checkaddress
-description:verify that the address is ela address
+description:verify that the address is ioeX address
 
 ##### Request
 ```
