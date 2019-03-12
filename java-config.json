@@ -1,10 +1,10 @@
 {
   "Host": "127.0.0.1:11336",
-  "Fee":"0.0005",
+  "Fee":"0.0001",
   "Confirmation":1,
   "RegisterAssetFee":"10",
   "RpcConfiguration":{
-    "User": "ElaUser",
-    "Pass": "Ela123"
+    "User": "ioeXUser",
+    "Pass": "ioeX123"
   }
 }
