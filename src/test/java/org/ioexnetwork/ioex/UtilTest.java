@@ -1,8 +1,8 @@
-package org.elastos.ela;
+package org.ioexnetwork.ioex;
 
-import org.elastos.common.Common;
-import org.elastos.common.SDKException;
-import org.elastos.common.Util;
+import org.ioexnetwork.common.Common;
+import org.ioexnetwork.common.SDKException;
+import org.ioexnetwork.common.Util;
 import org.junit.Test;
 
 import javax.xml.bind.DatatypeConverter;

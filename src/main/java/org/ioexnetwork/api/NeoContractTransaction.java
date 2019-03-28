@@ -2,7 +2,7 @@ package org.ioexnetwork.api;
 
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
-import org.ioexnetwork.ioex.Ela;
+import org.ioexnetwork.ioex.ioeX;
 import org.ioexnetwork.ioex.RawTx;
 import org.ioexnetwork.ioex.TxOutput;
 import org.ioexnetwork.ioex.UTXOTxInput;
@@ -36,7 +36,7 @@ public class NeoContractTransaction {
             //PayloadDeploy
             PayloadDeploy payloadDeploy = Basic.parsePayloadDeploy(json_transaction);
 
-            RawTx rawTx = Ela.deployContractTransaction(UTXOTxInputs,txOutputs,payloadDeploy);
+            RawTx rawTx = ioeX.deployContractTransaction(UTXOTxInputs,txOutputs,payloadDeploy);
             LinkedHashMap<String, Object> resultMap = getRawTxMap(rawTx.getRawTxString(), rawTx.getTxHash());
 
             LOGGER.info(Basic.getSuccess(resultMap));
@@ -60,7 +60,7 @@ public class NeoContractTransaction {
             // invoke
             PayloadInvoke payloadInvoke = Basic.genPayloadInvoke(json_transaction);
 
-            RawTx rawTx = Ela.invokenContractTransaction(UTXOTxInputs,txOutputs,payloadInvoke);
+            RawTx rawTx = ioeX.invokenContractTransaction(UTXOTxInputs,txOutputs,payloadInvoke);
             LinkedHashMap<String, Object> resultMap = getRawTxMap(rawTx.getRawTxString(), rawTx.getTxHash());
 
             LOGGER.info(Basic.getSuccess(resultMap));

@@ -1,6 +1,7 @@
 package org.ioexnetwork.ioexweb;
 
 import net.sf.json.JSONObject;
+import net.sf.json.JSONArray;
 import org.ioexnetwork.api.*;
 import org.ioexnetwork.common.Config;
 import org.ioexnetwork.common.ErrorCode;
@@ -33,6 +34,8 @@ public class ioeXController {
         LOGGER.info(params);
         JSONObject jsonObject = JSONObject.fromObject(params);
         String method = jsonObject.getString("method");
+        LOGGER.info(method);
+    
         JSONObject param = jsonObject.getJSONObject("params");
         switch (method) {
             case "genprivatekey":

@@ -6,7 +6,6 @@
 
     <groupId>org.ioexnetwork.ioex</groupId>
     <artifactId>ioeX.Utilities.Java</artifactId>
-    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <build>
         <plugins>
@@ -19,6 +18,11 @@
                 </configuration>
             </plugin>
 
+            <plugin>
+            	<groupId>org.apache.maven.plugins</groupId>
+            	<artifactId>maven-shade-plugin</artifactId>
+            	<version>2.3</version>
+            </plugin>
         </plugins>
     </build>
 
@@ -73,14 +77,16 @@
             <groupId> org.slf4j </groupId>
             <artifactId > slf4j-log4j12 </artifactId>
             <version> 1.8.0-beta0 </version>
-        </dependency >
-
-
-        <dependency>
-            <groupId>org.eclipse.jetty</groupId>
-            <artifactId>jetty-server</artifactId>
-            <version>9.2.25.v20180606</version>
         </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-server -->
+		<dependency>
+		    <groupId>org.eclipse.jetty</groupId>
+		    <artifactId>jetty-server</artifactId>
+		    <version>9.4.5.v20170502</version>
+		</dependency>
+
 
         <dependency>
             <groupId>commons-io</groupId>
@@ -100,4 +106,5 @@
         </dependency>
 
     </dependencies>
+    <packaging>jar</packaging>
 </project>

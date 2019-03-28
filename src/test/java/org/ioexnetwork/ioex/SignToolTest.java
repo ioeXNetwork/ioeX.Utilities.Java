@@ -1,6 +1,6 @@
-package org.elastos.ela;
+package org.ioexnetwork.ioex;
 
-import org.elastos.api.ELATransaction;
+import org.ioexnetwork.api.IOEXTransaction;
 import org.junit.Test;
 
 import javax.xml.bind.DatatypeConverter;

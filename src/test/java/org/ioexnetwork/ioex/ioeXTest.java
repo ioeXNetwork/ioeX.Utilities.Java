@@ -26,6 +26,7 @@ public class ioeXTest {
      */
     @Test
     public void  processMethod() throws Exception{
+        /*
         String filePath   = "C:/DNA/src/ioex_tool/src/test/java/org/ioexnetwork/ioex/transaction";
 
         FileInputStream inputStream = new FileInputStream(filePath);
@@ -57,6 +58,7 @@ public class ioeXTest {
         }
         inputStream.close();
         bufferedReader.close();
+        */
     }
 
     /**
@@ -127,8 +129,10 @@ public class ioeXTest {
 
     @Test
     public void test(){
+        /*
         String  result = "[qqq,www]";
         JSONArray addressArray = JSONArray.fromObject(result);
+        */
     }
 
 }
