@@ -14,12 +14,7 @@
  
 ### generate jar package
 
- ```
-File -> Project Structure -> Artifacts -> + -> JAR -> From modules with 
-1、-> Main Class
-2、-> extract to the target JAR
-3、-> META-INF PATH （C:\DNA\src\ioex_tool\src\main\resources）
-4、ok ->  Include in project build -> Apply ->ok
+mvn package shade:shade
 
 run : java -cp ioeX.Utilities.Java.jar  org.ioexnetwork.ioexweb.HttpServer
  ```
